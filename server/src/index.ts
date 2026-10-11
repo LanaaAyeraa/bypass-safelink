@@ -70,7 +70,7 @@ app.post('/api/bypass/batch', async (req: Request, res: Response): Promise<void>
   }
 });
 
-if (process.env.NODE_ENV !== 'test') {
+if (process.env.NODE_ENV !== 'test' && !process.env.VERCEL) {
   app.listen(PORT, () => {
     console.log(`[Bypass Engine] Server aktif berjalan di http://localhost:${PORT}`);
   });

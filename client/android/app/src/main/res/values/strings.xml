@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Universal Safelink Bypasser</string>
+    <string name="title_activity_main">Universal Safelink Bypasser</string>
+    <string name="package_name">com.bypasser.safelink</string>
+    <string name="custom_url_scheme">com.bypasser.safelink</string>
+</resources>

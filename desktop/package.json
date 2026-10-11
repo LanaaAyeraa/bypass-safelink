@@ -1,0 +1,44 @@
+{
+  "name": "universal-safelink-bypasser-desktop",
+  "version": "1.0.0",
+  "description": "Universal Safelink & Shortlink Bypasser Desktop App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:installer": "electron-builder --win nsis"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.bypasser.safelink",
+    "productName": "Universal Safelink Bypasser",
+    "directories": {
+      "output": "dist-installer"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Universal Safelink Bypasser",
+      "artifactName": "Universal-Safelink-Bypasser-Installer.exe"
+    },
+    "files": [
+      "main.js",
+      "client-dist/**/*",
+      "server-dist/**/*"
+    ],
+    "asar": true
+  }
+}
