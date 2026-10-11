@@ -1,0 +1,13 @@
+desktop
+dist-installer
+client-dist
+server-dist
+*.exe
+client/android
+docs
+.scratch
+.git
+node_modules
+client/node_modules
+server/node_modules
+desktop/node_modules
