@@ -16,3 +16,16 @@ Data terenkripsi, ter-hash, atau ter-encode (seperti Base64, hex, atau hidden in
 
 ### Redirect Chain
 Urutan pengalihan HTTP (status code 301, 302, 307, atau meta refresh/JavaScript redirect) dari safelink awal hingga mendarat di Destination URL akhir.
+
+### Hop
+Satu langkah lompatan dalam rantai pengalihan HTTP dari URL asal menuju URL perantara atau URL tujuan.
+
+### Heuristic Parameter Unpacker
+Mekanisme penguraian dan pendekripsian string URL tujuan yang terbungkus dalam parameter query dengan enkoding umum (Base64, Hex, URL encoding, ROT13).
+
+### Batch Bypass
+Fitur pemrosesan jamak untuk melewati sekumpulan link sekaligus dalam satu sesi kerja antarmuka.
+
+### Bookmarklet
+Potongan kode JavaScript yang disimpan di bilah markah (bookmark bar) browser untuk memicu bypass secara instan saat pengguna berada di halaman safelink.
+

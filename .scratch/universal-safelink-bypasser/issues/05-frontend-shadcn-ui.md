@@ -10,12 +10,23 @@ Antarmuka web modern kelas satu menggunakan React (Vite), Tailwind CSS, Lucide I
 
 **Blocked by:** 04: Express API Server & Batch Bypass Endpoint
 
-**Status:** ready-for-agent
+**Status:** resolved
 
-- [ ] Inisialisasi Vite + React + Tailwind CSS + shadcn/ui komponen
-- [ ] Komponen Single Bypass dengan input URL, tombol Bypass, loading spinner
-- [ ] Komponen Batch Bypass dengan multi-link queue dan progress indicator
-- [ ] Komponen visualisasi Hasil (Result Card, Hop Chain timeline, Copy/Open)
-- [ ] Komponen History manager dengan LocalStorage persistence
-- [ ] Komponen Bookmarklet generator dan panduan penggunaan
-- [ ] Dark/Light mode theme switch
+- [x] Inisialisasi Vite + React + Tailwind CSS + shadcn/ui komponen
+- [x] Komponen Single Bypass dengan input URL, tombol Bypass, loading spinner
+- [x] Komponen Batch Bypass dengan multi-link queue dan progress indicator
+- [x] Komponen visualisasi Hasil (Result Card, Hop Chain timeline, Copy/Open)
+- [x] Komponen History manager dengan LocalStorage persistence
+- [x] Komponen Bookmarklet generator dan panduan penggunaan
+- [x] Dark/Light mode theme switch
+
+## Answer
+Antarmuka frontend web dibangun dengan standar komponen shadcn/ui di direktori `client/`. Menggunakan React + TypeScript + Tailwind CSS + Lucide Icons dengan fitur:
+- Single Bypass dengan auto-paste dan shortcut contoh link (Safelinku, Blogger, Bitly).
+- Batch Bypass multi-link dengan progress bar dan tombol ekspor .txt.
+- ResultCard dengan tombol Salin (Copy), Buka Tautan (Open), dan HopTimeline interaktif.
+- Riwayat Bypass lokal (LocalStorage) dengan fitur pencarian dan pembersihan.
+- Generator Bookmarklet drag & drop serta salin kode JavaScript.
+- Pengalih tema gelap/terang (Dark/Light mode) otomatis tersimpan.
+Diverifikasi bebas error kompilasi TypeScript dan lolos build produksi Vite (2.35 detik).
+

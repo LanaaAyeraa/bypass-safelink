@@ -5,10 +5,14 @@ Modul penelusur pengalihan HTTP rekursif yang mampu melacak status kode redirect
 
 **Blocked by:** 01: Bypass Engine Core (Heuristics & Parameter Unpacker)
 
-**Status:** ready-for-agent
+**Status:** resolved
 
-- [ ] Implementasi recursive fetcher dengan custom User-Agent realistis
-- [ ] Pelacakan setiap langkah hop (URL perantara, HTTP status code, durasi)
-- [ ] Deteksi HTML `<meta http-equiv="refresh">` dan parsing URL redirect
-- [ ] Proteksi infinite loop dan batas kedalaman hops (maksimal 15 hops)
-- [ ] Unit & mock tests untuk skenario 301, 302, dan meta refresh
+- [x] Implementasi recursive fetcher dengan custom User-Agent realistis
+- [x] Pelacakan setiap langkah hop (URL perantara, HTTP status code, durasi)
+- [x] Deteksi HTML `<meta http-equiv="refresh">` dan parsing URL redirect
+- [x] Proteksi infinite loop dan batas kedalaman hops (maksimal 15 hops)
+- [x] Unit & mock tests untuk skenario 301, 302, dan meta refresh
+
+## Answer
+Modul HTTP redirect tracer diimplementasikan di `server/src/engine/redirectTracer.ts`. Mampu menelusuri pengalihan status code 301/302/303/307/308, tag HTML `<meta http-equiv="refresh">`, dan pengalihan JavaScript inline (`window.location`) dengan batas aman 15 hops serta proteksi pencegahan infinite loop. Diuji dengan local HTTP server dan lolos 100% tes pada `server/src/engine/__tests__/redirectTracer.test.ts`.
+

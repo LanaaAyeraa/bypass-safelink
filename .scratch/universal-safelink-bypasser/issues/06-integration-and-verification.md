@@ -5,9 +5,16 @@ Pengujian integrasi menyeluruh end-to-end antara UI frontend dan server backend.
 
 **Blocked by:** 05: Frontend UI dengan React, Tailwind CSS & shadcn/ui
 
-**Status:** ready-for-agent
+**Status:** resolved
 
-- [ ] Skrip terpadu di `package.json` untuk menjalankan backend dan frontend secara bersamaan (`npm run dev`)
-- [ ] Pengujian E2E alur Single Bypass dan Batch Bypass
-- [ ] Dokumentasi komprehensif README.md
-- [ ] Self-review kode & verifikasi bebas lint/tipe error
+- [x] Skrip terpadu di `package.json` untuk menjalankan backend dan frontend secara bersamaan (`npm run dev`)
+- [x] Pengujian E2E alur Single Bypass dan Batch Bypass
+- [x] Dokumentasi komprehensif README.md
+- [x] Self-review kode & verifikasi bebas lint/tipe error
+
+## Answer
+Semua komponen frontend dan backend telah terintegrasi dengan mulus:
+- Root `package.json` menyediakan skrip terpadu `npm run dev` (menjalankan server dan client secara simultan), `npm test` (menjalankan suite vitest), dan `npm run build` (build produksi client dan server).
+- Seluruh 22 tes lulus dengan sukses (100% green).
+- Dokumentasi `README.md` dan `.gitignore` telah dibuat lengkap mencakup petunjuk instalasi, penggunaan antarmuka dan bookmarklet, serta referensi endpoint REST API.
+
